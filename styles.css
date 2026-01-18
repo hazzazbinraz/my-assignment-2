@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 nav{
     background-color: #1A0B2E;
     
@@ -32,6 +33,7 @@ nav ul{
 }
 
 .sub-btn{
+    color: #FFFFFF;
     border: none;
     font-size: 16px;
     font-weight: 600;
@@ -43,4 +45,53 @@ nav ul{
     transform: scale(1.2);
     transition-duration: .7s;
     transform: translate( 50px) scale(1.2);
+}
+header{
+    /* width: 1600px; */
+}
+.banner-section{
+    background: url("./assets/hero-bg.png");
+   background-size: 100%;
+   background-repeat: no-repeat;
+    
+padding-top: 101px;
+padding-bottom: 101px;
+/* background-color: aqua; */
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.banner-logo{
+    /* border: 1px solid rgb(245, 245, 88); */
+   position: relative;
+   display: inline-block;
+   width: 410px;
+} 
+.img1{
+    width: 100%;
+    height: auto;
+}
+.img2{
+    position: absolute;
+    top: 105px;
+    right: 145px;
+    
+
+}
+.banner-heading{
+  margin-top: 40px;
+}
+.banner-heading h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.banner-heading p{
+    margin-top: 8px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+.btnh {
+    align-items: center;
 }
