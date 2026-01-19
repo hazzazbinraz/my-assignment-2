@@ -226,9 +226,101 @@ text-align: center;
 {
     grid-column: span 2;
 }
+.featured-section{
+    background-color:#1A0B2E;
+    padding: 120px 200px;
+}
+.featured-container{
+    /* border: 1px solid black; */
+}
+.episodes{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.episodes h1{
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
 
-
-
+}
+.cardss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.crds{
+    /* border: 2px solid white; */
+    background-color: #250D44;
+    border-radius: 20px;
+    width: 380px;
+    text-align: start;
+}
+.crds iframe{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.crd-content{
+    padding: 24px;
+}
+.crd-content h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+.crd-content .explain {
+    color: #FFFFFF;
+    opacity: 60%;
+    margin-bottom: 12px;
+}
+.time{
+    align-items: baseline;
+    justify-content: center;
+    color: #00FF88;
+    font-size: 16px;
+    font-weight: 600;
+}
+.host{
+   
+    padding: 100px 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.host h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+.host-container{
+    background-color: #250D44;
+    border-radius: 25px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 24px;
+}
+.host-bio{
+    text-align: start;
+}
+.host-bio h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.host-bio p{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400;
+    opacity: 60%;
+    margin-bottom: 16px;
+}
 
 /* media query */
 
@@ -266,7 +358,9 @@ text-align: center;
         display: none;
     }
     .about-container,
-    .why-choose
+    .why-choose,
+    .featured-section,
+    .host
     {
         padding: 40px 20px;
         width: 100%;
@@ -280,11 +374,23 @@ text-align: center;
         grid-template-columns: repeat(2, 2fr);
     }
     /* why chose */
-   .grid-container{
+   .grid-container,
+   .about-container,
+   .cardss,
+   .host-container
+   {
     display: inline-block;
     
    }
-   .grid{
+   .why-choose h1{
+        font-size: 43px;
+   }
+  .host-bio{
+    text-align: center;
+    margin-top: 15px;
+   }
+   .grid,
+   .crds{
      margin-top: 20px;
    }
 
@@ -301,6 +407,9 @@ text-align: center;
     }
     .why-choose{
         /* padding: 60px 100px; */
+    }
+    .host-bio{
+        width: 100%;
     }
 }
 
@@ -331,6 +440,8 @@ text-align: center;
         
     }
        .why-choose{
-        padding: 60px 100px;
+        /* padding: 60px 100px; */
     }
+   
+   
 }
