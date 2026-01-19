@@ -94,6 +94,7 @@ text-align: center;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 400;
+    opacity: 80%;
 }
 .btnh {
     display: flex;
@@ -121,23 +122,129 @@ text-align: center;
     border: 1px solid #00FF88;
     color: #00FF88;
 }
+.about-container{
+    padding: 50px 200px 120px 200px;
+    background-color: #1A0B2E;
+    
+}
+.about-section{
+   
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.podcast{
+     /* border: 2px solid red; */
+    margin-bottom: 80px;
+    
+}
+.podcast h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+#p1{
+   color: #FFFFFF;
+   font-size: 16px;
+   font-weight: 400;
+   opacity: 80%;
+
+}
+.ratings{
+    /* border: 2px solid blanchedalmond; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.card h1{
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: 900;
+    color: #00FF88;
+}
+.card p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 80%;
+}
+
+
+.why-choose{
+    padding: 120px 200px;
+    background-color: #230E3D;
+    text-align: center;
+}
+.h1{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    
+    
+}
+
+.grid{
+    border: none;
+    background-color: #351165;
+    border-radius: 10px;
+    text-align: start;
+    padding: 40px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+.grid h2{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+.grid p{
+    color: #FFFFFF;
+    opacity: 60%;
+}
+.grid1{
+    grid-row: span 2;
+}
+.grid2,
+.grid3 , 
+.grid4
+
+{
+    grid-column: span 2;
+}
 
 
 
 
-
+/* media query */
 
 @media screen and (max-width: 576px) {
 
 
-    header{
+    header
+    {
+        
         width: 100%;
         background-color: #1A0B2E;
         align-items: center;
         justify-content: center;
         
     }
-    .banner-section{
+    .banner-section {
         width: 100%;
         background-size: 100%;  
     }
@@ -158,6 +265,72 @@ text-align: center;
     nav button{
         display: none;
     }
+    .about-container,
+    .why-choose
+    {
+        padding: 40px 20px;
+        width: 100%;
+        /* background-color: #1A0B2E; */
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .ratings{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    /* why chose */
+   .grid-container{
+    display: inline-block;
+    
+   }
+   .grid{
+     margin-top: 20px;
+   }
+
   
   
+}
+@media (min-width: 993px) {
+      header{
+        width: 100%;
+        background-color: #1A0B2E;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .why-choose{
+        /* padding: 60px 100px; */
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 992px) {
+    header{
+        width: 100%;
+        background-color: #1A0B2E;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    nav ul{
+     display: none;
+    }
+      .about-container{
+        padding: 40px 20px;
+        width: 100%;
+        background-color: #1A0B2E;
+        align-items: center;
+        justify-content: center;
+        
+    }
+       .why-choose{
+        padding: 60px 100px;
+    }
 }
