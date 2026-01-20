@@ -323,6 +323,14 @@ text-align: center;
 .host-bio{
     text-align: start;
 }
+.social {
+   /* background-color: #00FF88; */
+   height: 30px;
+   align-items: center;
+}
+.social img{
+    
+}
 .host-bio h3{
     font-size: 32px;
     font-weight: 700;
